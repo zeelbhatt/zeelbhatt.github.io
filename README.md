@@ -18,13 +18,13 @@ I am an MS Robotics student at Arizona state university. I do research in Comput
 ### SLAM mission and autonomous landing
 
 ![Another Project](images/map-slam.png)
-*Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the Rover using optical flow*
+*Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
 ### Adeversarial generative networks
 
 ![Project](images/animation.gif)
-*Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation, showcasing proficiency in deep learning and computer vision.*
+*Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation as described in [Goodfellow’s paper](https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf), showcasing proficiency in deep learning and computer vision. (Implementation of Min-Max adversarial loss funtion)*
 [View Code](https://github.com/zeelbhatt/generative_adversarial_networks)
 
 
