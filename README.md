@@ -18,7 +18,7 @@
 ### LQR Controller to balance the inverted pendulmn
 
 ![Project Name](images/pendulmn.gif)
-*Full-state feedback system: keeping the inverted pendulmn using verticle using LQR Control*
+*Balancing an inverted pendulum by programming an LQR controller. Design of a controller by checking observabilty matrix, kalman filtering, and finally checking the controllability of the designed system.*
 [View Code]([project1-code-link](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control))
 
 
