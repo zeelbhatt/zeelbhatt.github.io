@@ -18,6 +18,7 @@
 ### Adeversarial generative networks
 ![Project Name](images/animation.gif)
 *Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation, showcasing proficiency in deep learning and computer vision.*
+[View Code](https://github.com/zeelbhatt/generative_adversarial_networks)
 
 
 ### LQR Controller to balance the inverted pendulmn
