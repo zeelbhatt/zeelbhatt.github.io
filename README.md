@@ -15,16 +15,15 @@
 
 ## Projects
 
-### Project 1: Project Name
+### LQR Controller to balance the inverted pendulmn
 
 ![Project Name](images/pendulmn.gif)
-*Description: A brief description of the project goes here.*
-
+*Full-state feedback system: keeping the inverted pendulmn using verticle using LQR Control*
 [View Code]([project1-code-link](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control))
 
 ### Project 2: Another Project
 
-![Another Project](gifs/project2.gif)
+![Another Project](images/orbTracking2.mp4)
 *Description: Describe your second project here.*
 
 [View Project](project2-link) | [View Code](project2-code-link)
