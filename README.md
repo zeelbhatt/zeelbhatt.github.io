@@ -1,4 +1,4 @@
-# Computer Vision | Robotics
+# Computer Vision | Structure From Motion | Robotics
 
 #### Technical Skills: Python, C++, PyTorch, ROS/ROS2
 
