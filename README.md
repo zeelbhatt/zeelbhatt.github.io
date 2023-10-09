@@ -15,6 +15,11 @@
 
 ## Projects
 
+### Adeversarial generative networks
+![Project Name](images/animation.gif)
+*Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation, showcasing proficiency in deep learning and computer vision.*
+
+
 ### LQR Controller to balance the inverted pendulmn
 
 ![Project Name](images/pendulmn.gif)
@@ -28,6 +33,9 @@
 ![Another Project](images/map-slam.png)
 *Description: Describe your second project here.*
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
+
+
+
 
 
 
