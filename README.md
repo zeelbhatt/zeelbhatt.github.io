@@ -23,7 +23,7 @@
 
 ### Project 2: Another Project
 
-![Another Project](images/Screenshot from 2023-10-08 19-17-17.png)
+![Another Project](images/map-slam.png)
 *Description: Describe your second project here.*
 
 [View Project](project2-link) | [View Code](project2-code-link)
