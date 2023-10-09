@@ -15,6 +15,12 @@ I am an MS Robotics student at Arizona state university. I do research in Comput
 
 ## Projects
 
+### SLAM mission and autonomous landing
+
+![Another Project](images/map-slam.png)
+*Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the Rover using optical flow*
+[View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
+
 ### Adeversarial generative networks
 
 ![Project](images/animation.gif)
@@ -30,11 +36,6 @@ I am an MS Robotics student at Arizona state university. I do research in Comput
 
 
 
-### SLAM mission and autonomous landing
-
-![Another Project](images/map-slam.png)
-*Description: Describe your second project here.*
-[View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
 
 
