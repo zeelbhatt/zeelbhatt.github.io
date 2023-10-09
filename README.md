@@ -19,7 +19,7 @@
 
 ![Project Name](images/pendulmn.gif)
 *Balancing an inverted pendulum by programming an LQR controller. Design of a controller by checking observabilty matrix, kalman filtering, and finally checking the controllability of the designed system.*
-[View Code]([project1-code-link](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control))
+[View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control)
 
 
 
