@@ -1,16 +1,15 @@
-I am an MS Robotics student at Arizona state university. My masters thesis is in learning based Visual Odometry. This research is driven by a more abstract interest in shape understanding at both the structural and semantic levels.
+# Computer Vision | Robotics
 
-### Education
-##  Arizona State University
-MS Robotics
+#### Technical Skills: , AWS, Snowflake, MATLAB
 
-## SRM University
-B.tech Electronics and communication
+## Education						       		
+- M.S., Robotics	| Arizona State University	 			        		
+- B.Tech., Electronics and communication | SRM University
 
-### Experience
-Thesis at Active Perception Group
-- Visual Odometry via Contrastive Learning
+## Work Experience
+**Research Assitant @ Active Perception Group (_April 2023 - Present_)**
+- Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset.
 
-### Projects
-Image processing
-
+**Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
+- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
+- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
