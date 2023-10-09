@@ -17,10 +17,10 @@
 
 ### Project 1: Project Name
 
-![Project Name](screenshots/project1.png)
+![Project Name](images/pendulmn.gif)
 *Description: A brief description of the project goes here.*
 
-[View Project](project1-link) | [View Code](project1-code-link)
+[View Code]([project1-code-link](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control))
 
 ### Project 2: Another Project
 
