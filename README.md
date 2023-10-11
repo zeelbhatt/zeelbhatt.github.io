@@ -1,4 +1,4 @@
-I am an MS Robotics student at Arizona state university. I do research in Computer vision, Machine Learning with focus on Robotics. My masters thesis is in learning based Visual Odometry. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels.
+I am an MS Robotics student at Arizona state university. I do research in computer vision, ,machine learning with focus on robotics. My masters thesis is in learning based Visual Odometry. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels.
 
 #### Technical Skills: Python, C++, PyTorch, OpenCV, ROS/ROS2
 
