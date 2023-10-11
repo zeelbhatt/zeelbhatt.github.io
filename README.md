@@ -36,6 +36,16 @@ I am an MS Robotics student at Arizona state university. I do research in comput
 
 [View PDF](/images/vocl_proposal.pdf)
 
+## Publication
+
+[IROS 2018](https://ieeexplore.ieee.org/document/8594129)
+M. Harikrishnan Nair, T. Ghanshyam Singh, G. Chourasia, A. Das, A. Shrivastava and Z. S. Bhatt, "Flamen 7 DOF
+robotic Arm to Manipulate a Spanish Fan," 2018 IEEE/RSJ International Conference on Intelligent Robots and Sys-
+tems (IROS), 2018, pp. 4152-4157, DOI: 10.1109/IROS.2018.8594129.
+
+
+
+
 
 
 
