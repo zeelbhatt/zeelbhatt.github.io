@@ -17,7 +17,6 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### SLAM mission and autonomous landing
 
-![slamProj](images/ezgif.gif)
 <img src="/images/ezgif.gif" width="1024" height="482"/>
 
 *Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
