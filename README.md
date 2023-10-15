@@ -17,15 +17,22 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### SLAM mission and autonomous landing
 
-![Another Project](images/map-slam.png)
+![slamProj](images/map-slam.png)
 *Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
 ### Fourier-transform fun
 
-![Proj2](images/lincon_output.png)
+![fourierProj](images/lincon_output.png)
 *Implementation of low-pass filter, high-pass filter on the images, Phase swapping of two images*
 [View Code](https://github.com/zeelbhatt/image_fourier_domain)
+
+### Image generation - multiresolution blending 
+
+![blendingProj](images/blended_op.png)
+*Generation of Gaussian pyramid and Laplcian pyramid as a basic encoder decoder model*
+
+
 
 ### Adeversarial generative networks
 
