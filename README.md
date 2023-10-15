@@ -29,7 +29,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### Image generation - multiresolution blending 
 
-![blendingProj](images/blended_op.png)
+![blendingProj](images/pyramids.png)
 
 *Generation of Gaussian pyramid and Laplcian pyramid as a basic encoder decoder model*
 
