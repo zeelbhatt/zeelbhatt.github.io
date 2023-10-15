@@ -37,7 +37,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### Adeversarial generative networks
 
-![Project](images/animation.gif)
+![Project](images/dcgan.png)
 *Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation as described in [Goodfellow’s paper](https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf), showcasing proficiency in deep learning and computer vision. (Implementation of Min-Max adversarial loss funtion)*
 [View Code](https://github.com/zeelbhatt/generative_adversarial_networks)
 
