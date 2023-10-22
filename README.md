@@ -51,6 +51,11 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 [View PDF](/images/vocl_proposal.pdf)
 
+## Blog-posts
+### Image Fourier Transform
+[![Alt Text](images/lincon_output.png)](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
+
+
 ## Publication
 
 IROS 2018 [https://ieeexplore.ieee.org/document/8594129](https://ieeexplore.ieee.org/document/8594129)
