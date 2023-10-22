@@ -22,7 +22,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 *Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
-### Fourier-transform fun
+### Image signal processing
 
 ![fourierProj](images/lincon_output.png)
 *Implementation of low-pass filter, high-pass filter on the images, Phase swapping of two images*
