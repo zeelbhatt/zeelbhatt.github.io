@@ -26,7 +26,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ![fourierProj](images/lincon_output.png)
 *Implementation of low-pass filter, high-pass filter on the images, Phase swapping of two images*
-[View Code](https://github.com/zeelbhatt/image_fourier_domain)
+[See blog-post](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
 
 ### Image generation - multiresolution blending 
 
