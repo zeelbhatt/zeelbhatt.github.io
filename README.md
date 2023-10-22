@@ -53,7 +53,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ## Blog-posts
 ### Image Fourier Transform
-[![Alt Text](images/lincon_output.png)](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
+[![Alt Text](images/fft2.png)](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
 
 
 ## Publication
