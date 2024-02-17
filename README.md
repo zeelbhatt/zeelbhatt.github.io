@@ -25,7 +25,8 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 ### Bundle Adjustment using C++ Ceres Library
 
 ![blendingProj](images/building.png)
-[View Code](https://github.com/zeelbhatt/bundle_adjustment.github.io)
+[*See blog-post*](https://zeelbhatt.github.io/bundle_adjustment.github.io/)
+*I have written a detail article about Camera calinration and bundle Adjustment* [*View Code*](https://github.com/zeelbhatt/bundle_adjustment.github.io)
 
 ### Image signal processing
 
