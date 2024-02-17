@@ -30,7 +30,8 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### Bundle Adjustment using C++ Ceres Library
 
-(images/lincon_output.png)
+![blendingProj](images/building.png)
+[View Code](https://github.com/zeelbhatt/bundle_adjustment.github.io)
 
 ### Image generation - multiresolution blending 
 
