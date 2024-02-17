@@ -28,6 +28,10 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 *Implementation of low-pass filter, high-pass filter on the images, Phase swapping of two images*
 [See blog-post](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
 
+### Bundle Adjustment using C++ Ceres Library
+
+(images/lincon_output.png)
+
 ### Image generation - multiresolution blending 
 
 ![blendingProj](images/pyramids.png)
