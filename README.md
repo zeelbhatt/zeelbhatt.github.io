@@ -8,7 +8,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ## Work Experience
 **Researcher @ Active Perception Group (_April 2023 - Present_)**
--Designing un-supervised learning based architechurre for monocular visual odometry on KITTI dataset.
+- Designing un-supervised learning based architechurre for monocular visual odometry on KITTI dataset.
 
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability.
