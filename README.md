@@ -6,12 +6,33 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 - M.S., Robotics	| Arizona State University	 			        		
 - B.Tech., Electronics and communication | SRM University
 
-## Work Experience
+<!-- ## Work Experience
 **Researcher @ Active Perception Group (_April 2023 - Present_)**
 - Designing un-supervised learning based architechurre for monocular visual odometry on KITTI dataset.
 
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
-- Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability.
+- Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
+
+<div style="display: flex; align-items: center;">
+  <!-- Left side: Image -->
+  <div style="flex: 1;">
+    <img src="images/lfm_encoding_comparison.png" alt="VOCAL Image" style="max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Right side: Text -->
+  <div style="flex: 1; margin-left: 20px;">
+    <h3>LfM: Learning from Motion (Latest Update ICRA 2025 Submission)</h3>
+    <p>
+      <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
+      function for finding SE(3) pose of object.
+      <br><br>
+      <strong>Concepts:</strong> ORB-SLAM, ROS, Gazebo Simulation, Optical Flow.
+      <br><br>
+      <a href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/">View Code</a>
+    </p>
+  </div>
+</div>
+
 
 ## Projects
 
