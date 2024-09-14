@@ -31,7 +31,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
       <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
       function for finding SE(3) pose of object.
       <br><br>
-      <strong>Concepts:</strong> ORB-SLAM, ROS, Gazebo Simulation, Optical Flow.
+      <strong>Concepts:</strong> Epipolar geometry, Siamese networks,Contrastive loss,Optical Flow.
       <br><br>
       <a href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/">View Code</a>
     </p>
@@ -55,7 +55,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 ![VOCAL_img](images/lfm_encoding_comparison.png)
 
 
-*A Self-Supervised approach for Learning based Visual Localization. It is a novel use of contrastive loss funtion for finding SE(3) pose of object*  (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
+*A Self-Supervised approach for Learning based Visual Localization. It is a novel use of contrastive loss funtion for finding SE(3) pose of object*
 [View Code](https://zeelbhatt.github.io/Learning-from-Motion.github.io/)
 
 
