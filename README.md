@@ -7,7 +7,6 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 - B.Tech., Electronics and communication | SRM University
 
 ## LATEST CAREER UPDATE !!
-<span style="color:darkred;">LATEST CAREER UPDATE !!</span>
 
 <!-- ## Work Experience
 **Researcher @ Active Perception Group (_April 2023 - Present_)**
