@@ -6,6 +6,9 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 - M.S., Robotics	| Arizona State University	 			        		
 - B.Tech., Electronics and communication | SRM University
 
+## LATEST CAREER UPDATE !!
+<span style="color:darkred;">LATEST CAREER UPDATE !!</span>
+
 <!-- ## Work Experience
 **Researcher @ Active Perception Group (_April 2023 - Present_)**
 - Designing un-supervised learning based architechurre for monocular visual odometry on KITTI dataset.
