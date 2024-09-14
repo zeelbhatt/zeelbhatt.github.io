@@ -17,16 +17,12 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### LfM : Learning from Motion (Latest Update ICRA 2025 Submission) 
 
-![slamProj](images/ezgif.gif)
+![VOCAL_img](images/lfm_encoding_comparison.png)
 
-*Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
+
+*A Self-Supervised approach for Learning based Visual Localization. It is a novel use of contrastive loss funtion for finding SE(3) pose of object*  (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
-### Bundle Adjustment using C++ Ceres Library
-
-![blendingProj](images/building.png)
-[*See blog-post*](https://zeelbhatt.github.io/bundle_adjustment.github.io/)
-*I have written a detail article about Camera calinration and bundle Adjustment* [*View Code*](https://github.com/zeelbhatt/bundle_adjustment.github.io)
 
 ### SLAM mission and autonomous landing
 
