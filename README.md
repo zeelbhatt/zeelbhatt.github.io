@@ -6,7 +6,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 - M.S., Robotics	| Arizona State University	 			        		
 - B.Tech., Electronics and communication | SRM University
 
-## LATEST CAREER UPDATE !!
+
 
 <!-- ## Work Experience
 **Researcher @ Active Perception Group (_April 2023 - Present_)**
@@ -14,6 +14,9 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
+
+## LATEST CAREER UPDATE !!
+<span style="color:darkred;">I am very happy to share that we submitted our latest research topic to ICRA 2025! </span>
 
 <div style="display: flex; align-items: center;">
   <!-- Left side: Image -->
@@ -23,7 +26,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
   <!-- Right side: Text -->
   <div style="flex: 1; margin-left: 20px;">
-    <h3>LfM: Learning from Motion (Latest Update ICRA 2025 Submission)</h3>
+    <h3>LfM: Learning from Motion</h3>
     <p>
       <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
       function for finding SE(3) pose of object.
