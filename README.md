@@ -37,7 +37,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
     </p>
   </div>
 </div>
-
+<br><br>
 
 ## Projects
 
