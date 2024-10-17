@@ -50,7 +50,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 *Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
 [View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
 
-### VOCAL : Visual Odometry via Contrastive Learning 
+### Learning to Localize : Contrastive approach for visual localization 
 
 ![VOCAL_img](images/lfm_encoding_comparison.png)
 
