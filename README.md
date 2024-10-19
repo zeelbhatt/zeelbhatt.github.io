@@ -1,3 +1,13 @@
+<!-- Default Statcounter code for My Portfolio https://zeelbhatt.github.io/ -->
+<script type="text/javascript">
+var sc_project=13036483;
+var sc_invisible=1;
+var sc_security="d62427be";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="web counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13036483/0/d62427be/1/" alt="web counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
 I am an MS Robotics student at Arizona state university. I do research in machine learning with focus on 3D vision and robotics. My masters thesis is in learning based Visual Odometry. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels.
 
 #### Technical Skills: C++, CUDA, Ceres, g2o, PyTorch, OpenCV, ROS/ROS2
