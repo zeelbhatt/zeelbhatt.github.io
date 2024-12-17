@@ -49,6 +49,23 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 </div>
 <br><br>
 
+## Work Experience
+
+### Active Perception Group | Research Assistant 
+MS Thesis - Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset. Advisor Dr Yezhou Yang
+
+### Packizon | Computer Vision Intern
+Developed an RGBD camera-based, highly accurate (<0.02m error) box-dimensioning system for a mid-size warehouses and applied convex optimization techniques to maximize trucking efficiency by optimizing cargo volume and delivery address arrangement, saving up to 5 trips, equivalent to approximately $1000 per day.
+
+### HiMER Lab | Robotics Research Engineer
+Executed a VR-based teleoperation system for Reachy Robot using Unity and Meta Quest 3, achieving calibration precision under 3cm, with an average latency of 45 ms and a high user ergonomics score of 4/5.
+
+### Flytbase | Robotics Engineer 
+• Contributed to Warehouse drone automation team by deploying various Perception and Mapping algorithms.
+• Integrated Particle Filter, EKF, and YOLO semantic segmentation into PX4 autopilot.
+
+
+
 ## Projects
 
 
