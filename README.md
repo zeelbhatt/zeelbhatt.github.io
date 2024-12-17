@@ -59,7 +59,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
   </div>
 
   <!-- Right side: Text -->
-  <div style="flex: 1; margin-left: 20px;">
+  <div style="flex: 1.5; margin-left: 50px;">
     <h3>Active Perception Group | Research Assistant</h3>
     <p>
       <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
