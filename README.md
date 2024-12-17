@@ -51,6 +51,28 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ## Work Experience
 
+
+<div style="display: flex; align-items: center;">
+  <!-- Left side: Image -->
+  <div style="flex: 1;">
+    <img src="images/latent_space_diff.png" alt="VOCAL Image" style="max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Right side: Text -->
+  <div style="flex: 1; margin-left: 20px;">
+    <h3>Active Perception Group | Research Assistant</h3>
+    <p>
+      <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
+      function for finding SE(3) pose of object.
+      <br><br>
+      <strong>Concepts:</strong> Epipolar geometry, Siamese networks,Contrastive loss,Optical Flow.
+      <br><br>
+      <a href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/">View Code</a>
+    </p>
+  </div>
+</div>
+<br><br>
+
 ### Active Perception Group | Research Assistant 
 MS Thesis - Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset. Advisor Dr Yezhou Yang
 
