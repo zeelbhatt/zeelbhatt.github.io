@@ -55,7 +55,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 <div style="display: flex; align-items: center;">
   <!-- Left side: Image -->
   <div style="flex: 1;">
-    <img src="images/latent_space_diff.png" alt="VOCAL Image" style="max-width: 100%; height: auto;">
+    <img src="images/latent_space_diff.png" alt="VOCAL Image" style="max-width: 50%; height: auto;">
   </div>
 
   <!-- Right side: Text -->
