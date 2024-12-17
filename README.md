@@ -51,36 +51,14 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ## Work Experience
 
-
-<div style="display: flex; align-items: center;">
-  <!-- Left side: Image -->
-  <div style="flex: 1;">
-    <img src="images/latent_space_diff.png" alt="VOCAL Image" style="max-width: 50%; height: auto;">
-  </div>
-
-  <!-- Right side: Text -->
-  <div style="flex: 1.5; margin-left: 50px;">
-    <h3>Active Perception Group | Research Assistant</h3>
-    <p>
-      <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
-      function for finding SE(3) pose of object.
-      <br><br>
-      <strong>Concepts:</strong> Epipolar geometry, Siamese networks,Contrastive loss,Optical Flow.
-      <br><br>
-      <a href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/">View Code</a>
-    </p>
-  </div>
-</div>
-<br><br>
-
 ### Active Perception Group | Research Assistant 
 MS Thesis - Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset. Advisor Dr Yezhou Yang
 
 ### Packizon | Computer Vision Intern
 Developed an RGBD camera-based, highly accurate (<0.02m error) box-dimensioning system for a mid-size warehouses and applied convex optimization techniques to maximize trucking efficiency by optimizing cargo volume and delivery address arrangement, saving up to 5 trips, equivalent to approximately $1000 per day.
 
-### HiMER Lab | Robotics Research Engineer
-Executed a VR-based teleoperation system for Reachy Robot using Unity and Meta Quest 3, achieving calibration precision under 3cm, with an average latency of 45 ms and a high user ergonomics score of 4/5.
+### RRC | Robotics Research Engineer
+Performed semantic segmentation of infrastructure objects in 3D point cloud data collected via vehicle-mounted LiDAR, achieving 92% IoU using a PointNet architecture trained on the Waymo dataset to track 6D object poses.
 
 ### Flytbase | Robotics Engineer 
 • Contributed to Warehouse drone automation team by deploying various Perception and Mapping algorithms.
