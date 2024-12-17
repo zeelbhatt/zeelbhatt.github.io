@@ -62,7 +62,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 
 ### Learning to Localize : Contrastive approach for visual localization 
 
-![VOCAL_img](images/lfm_encoding_comparison.png)
+![VOCAL_img](images/latent_space_diff.png)
 
 
 *A Self-Supervised approach for Learning based Visual Localization. It is a novel use of contrastive loss funtion for finding SE(3) pose of object*
