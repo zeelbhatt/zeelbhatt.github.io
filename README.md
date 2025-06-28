@@ -43,7 +43,7 @@ I am an MS Robotics student at Arizona state university. I do research in machin
       <br><br>
       <strong>Concepts:</strong> Epipolar geometry, Siamese networks,Contrastive loss,Optical Flow.
       <br><br>
-      <a href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/">View Code</a>
+
     </p>
   </div>
 </div>
