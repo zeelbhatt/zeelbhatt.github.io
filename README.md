@@ -26,9 +26,9 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
 
 ## Posts!
-### My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
+### - My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
 
-### Queen's Gambit Knight sacrifice version !!
+### - Queen's Gambit Knight sacrifice version !!
 #### The one from my games:
 
 <iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
