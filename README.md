@@ -26,7 +26,7 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
 
 ## Posts!
-#### My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
+### My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
 
 ### Queen's Gambit Knight sacrifice version !!
 #### The one from my games:
@@ -40,21 +40,20 @@ width=600 height=397 frameborder=0></iframe>
 Advancing Spatial AI | Building robust SLAM & 3D reconstruction systems | Training 3D foundation models to redefine Spatial intelligence.
 
 ### Active Perception Group | Research Assistant 
-MS Thesis - Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset. Advisor Dr Yezhou Yang
+MS Thesis: Visual odometry using supervised contrastive regression loss for pose estimation (Advisor: Dr. Yezhou Yang)
+Achieved 0.76 cm translational and 1e-6 rad rotational accuracy on the KITTI dataset
 
 ### Packizon | Computer Vision Intern
-Developed an RGBD camera-based, highly accurate (<0.02m error) box-dimensioning system for a mid-size warehouses and applied convex optimization techniques to maximize trucking efficiency by optimizing cargo volume and delivery address arrangement, saving up to 5 trips, equivalent to approximately $1000 per day.
-
+Developed an RGBD camera-based, highly accurate  box-dimensioning system
 ### RRC | Robotics Research Engineer
-Performed semantic segmentation of infrastructure objects in 3D point cloud data collected via vehicle-mounted LiDAR, achieving 92% IoU using a PointNet architecture trained on the Waymo dataset to track 6D object poses.
+Autonomous Vehicle: Experiments with COntrol System
 
 ### Flytbase | Robotics Engineer 
-• Contributed to Warehouse drone automation team by deploying various Perception and Mapping algorithms.
-• Integrated Particle Filter, EKF, and YOLO semantic segmentation into PX4 autopilot.
+Robotics Software Development for Drones in ROS | Lots of Computer Vision
 
 
 
-## Projects
+## Intersting Projects:
 
 
 
