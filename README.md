@@ -25,8 +25,8 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
 
-## Queen's Gambit Knight sacrifice version !!
-My game:
+### Queen's Gambit Knight sacrifice version !!
+#### The one from my games:
 
 <iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
