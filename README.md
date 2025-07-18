@@ -25,29 +25,11 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
 
-## LATEST CAREER UPDATE !!
-<span style="color:darkred;">I am very happy to share that we submitted our latest research topic to ICRA 2025! </span>
+## Queen's Gambit Knight sacrifice version !!
+My game:
 
-<div style="display: flex; align-items: center;">
-  <!-- Left side: Image -->
-  <div style="flex: 1;">
-    <img src="images/lfm_main.png" alt="VOCAL Image" style="max-width: 100%; height: auto;">
-  </div>
-
-  <!-- Right side: Text -->
-  <div style="flex: 1; margin-left: 50px;">
-    <h3>LfM: Learning from Motion</h3>
-    <p>
-      <em>A Self-Supervised approach for Learning based Visual Localization.</em> It is a novel use of contrastive loss 
-      function for finding SE(3) pose of object.
-      <br><br>
-      <strong>Concepts:</strong> Epipolar geometry, Siamese networks,Contrastive loss,Optical Flow.
-      <br><br>
-
-    </p>
-  </div>
-</div>
-<br><br>
+<iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
 
 ## Work Experience
 
