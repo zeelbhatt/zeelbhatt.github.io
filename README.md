@@ -33,6 +33,9 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 
 <iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
+Main line of Queen's Gambit Declined. With beutiful knight sacrifice on move #15, with inevitable checkmate in next 4 moves.
+
+
 
 ## Work Experience
 
