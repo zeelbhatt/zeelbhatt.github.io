@@ -8,9 +8,9 @@ var sc_security="d62427be";
 <noscript><div class="statcounter"><a title="web counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13036483/0/d62427be/1/" alt="web counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
-I am an MS Robotics student at Arizona state university. I do research in machine learning with focus on 3D vision and robotics. My masters thesis is in learning based Visual Odometry. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels.
+I am an MS Robotics from Arizona state university. I do research in machine learning with focus on 3D vision and robotics. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels. I practice a lots of Chess and a musical instrument. I beleive humans should be immortal.  
 
-#### Technical Skills: C++, CUDA, Ceres, g2o, PyTorch, OpenCV, ROS/ROS2
+#### Technical Skills: C++, CUDA, GTSAM, PyTorch, OpenCV, ROS/ROS2
 
 ## Education						       		
 - M.S., Robotics	| Arizona State University	 			        		
@@ -25,6 +25,9 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 **Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
 - Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
 
+## Posts!
+#### My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
+
 ### Queen's Gambit Knight sacrifice version !!
 #### The one from my games:
 
@@ -32,6 +35,9 @@ I am an MS Robotics student at Arizona state university. I do research in machin
 width=600 height=397 frameborder=0></iframe>
 
 ## Work Experience
+
+### Openspace AI | Computer Vision Engineer
+Advancing Spatial AI | Building robust SLAM & 3D reconstruction systems | Training 3D foundation models to redefine Spatial intelligence.
 
 ### Active Perception Group | Research Assistant 
 MS Thesis - Visual odometry using Contrastive Learning: designing a supervised contrastive regression loss for visual pose estimation. Transnational accuracy:0.76 cm. Rotational accuracy:1e-6 radians on KITTI dataset. Advisor Dr Yezhou Yang
