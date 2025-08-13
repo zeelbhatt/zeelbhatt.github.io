@@ -28,12 +28,6 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 ## Posts!
 ### - My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
 
-### - Queen's Gambit Knight sacrifice version !!
-#### The one from my games:
-
-<iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
-width=600 height=397 frameborder=0></iframe>
-The main line of Queen's Gambit Declined. With a beautiful knight sacrifice on move 15, checkmate was inevitable within the next four moves.
 
 
 
@@ -124,6 +118,14 @@ M. Harikrishnan Nair, T. Ghanshyam Singh, G. Chourasia, A. Das, A. Shrivastava a
 
 [https://ieeexplore.ieee.org/abstract/document/8991313](https://ieeexplore.ieee.org/abstract/document/8991313)
 Chourasia, Gunjan, et al. "7-dof robotic manipulator for autonomous segregation using transfer learning." 2019 6th International Conference on Computing for Sustainable Global Development (INDIACom). IEEE, 2019.
+
+### - Queen's Gambit Knight sacrifice version !!
+#### The one from my games:
+
+<iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+The main line of Queen's Gambit Declined. With a beautiful knight sacrifice on move 15, checkmate was inevitable within the next four moves.
+
 
 
 
