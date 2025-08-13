@@ -28,9 +28,6 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 ## Posts!
 ### - My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
 
-
-
-
 ## Work Experience
 
 ### Openspace AI | Computer Vision Engineer
