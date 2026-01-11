@@ -116,12 +116,17 @@ M. Harikrishnan Nair, T. Ghanshyam Singh, G. Chourasia, A. Das, A. Shrivastava a
 [https://ieeexplore.ieee.org/abstract/document/8991313](https://ieeexplore.ieee.org/abstract/document/8991313)
 Chourasia, Gunjan, et al. "7-dof robotic manipulator for autonomous segregation using transfer learning." 2019 6th International Conference on Computing for Sustainable Global Development (INDIACom). IEEE, 2019.
 
-### - Queen's Gambit Knight sacrifice version !!
-#### The one from my games:
+### - My Opennings !!
+#### Queen's Gambit Knight sacrifice version
 
 <iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
 width=600 height=397 frameborder=0></iframe>
 The main line of Queen's Gambit Declined. With a beautiful knight sacrifice on move 15, checkmate was inevitable within the next four moves.
+
+#### Sicilian Defense is the best for Black
+
+<iframe id="14394613" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=14394613"></iframe><script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"14394613"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+My dark squared bishop is the MVP!
 
 
 
