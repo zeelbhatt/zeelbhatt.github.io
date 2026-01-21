@@ -29,6 +29,8 @@ I am an MS Robotics from Arizona state university. I do research in machine lear
 ### - My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
 
 ## Work Experience
+### Opal AI | Machine Learning Engineer
+Scan2BIM. Geomteric Computer Vision. VLM
 
 ### Openspace AI | Computer Vision Engineer
 Advancing Spatial AI | Building robust SLAM & 3D reconstruction systems | Training 3D foundation models to redefine Spatial intelligence.
