@@ -1,0 +1,6 @@
+/* ============================================================
+   FONTS — Noto Sans (the theme's webfont) + Noto Sans Mono
+   The original site self-hosts Noto Sans. We load the same
+   families from Google Fonts — no visual substitution.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Noto+Sans+Mono:wght@400;500;600&display=swap');

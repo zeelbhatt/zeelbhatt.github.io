@@ -1,0 +1,52 @@
+/* ============================================================
+   COLORS — derived from jekyll-theme-minimal (the live portfolio theme)
+   Base palette + semantic aliases.
+   ============================================================ */
+:root {
+  /* --- Base neutrals --- */
+  --white: #ffffff;
+  --ink-900: #222222;   /* h1 / strong */
+  --ink-800: #393939;   /* h2 */
+  --ink-700: #494949;   /* h3–h6 */
+  --ink-600: #333333;   /* code text */
+  --ink-500: #727272;   /* body copy */
+  --ink-400: #777777;   /* muted / captions */
+  --ink-300: #959da5;   /* faint */
+
+  /* --- Brand blue (theme link color) --- */
+  --blue-600: #006699;  /* link hover  (#069) */
+  --blue-500: #267cb9;  /* link / primary accent */
+  --blue-100: #e3eef6;  /* tint surface */
+
+  /* --- Lines & surfaces --- */
+  --line-200: #e5e5e5;  /* hairline borders, hr */
+  --line-300: #e0e0e0;  /* stronger borders */
+  --surface-subtle: #f8f8f8;
+  --surface-panel:  #f4f4f4;
+
+  /* ============================================================
+     SEMANTIC ALIASES — prefer these in components
+     ============================================================ */
+  --bg-page:        var(--white);
+  --bg-card:        var(--white);
+  --bg-card-subtle: var(--surface-subtle);
+  --bg-panel:       var(--surface-panel);
+  --bg-tint:        var(--blue-100);
+
+  --text-display:   var(--ink-900);
+  --text-heading:   var(--ink-800);
+  --text-subhead:   var(--ink-700);
+  --text-body:      var(--ink-500);
+  --text-muted:     var(--ink-400);
+  --text-code:      var(--ink-600);
+  --text-on-accent: var(--white);
+
+  --accent:         var(--blue-500);
+  --accent-strong:  var(--blue-600);
+  --accent-tint:    var(--blue-100);
+
+  --border:         var(--line-200);
+  --border-strong:  var(--line-300);
+
+  --focus-ring:     var(--blue-500);
+}

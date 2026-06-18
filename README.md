@@ -1,153 +1,127 @@
-<!-- Default Statcounter code for My Portfolio https://zeelbhatt.github.io/ -->
-<script type="text/javascript">
-var sc_project=13036483;
-var sc_invisible=1;
-var sc_security="d62427be";
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="web counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13036483/0/d62427be/1/" alt="web counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
-I am an MS Robotics from Arizona state university. I do research in machine learning with focus on 3D vision and robotics. My research is driven by a more abstract interest in shape understanding at both the structural and semantic levels. I practice a lots of Chess and a musical instrument. I beleive humans should be immortal.  
-
-#### Technical Skills: C++, CUDA, GTSAM, PyTorch, OpenCV, ROS/ROS2
-
-## Education						       		
-- M.S., Robotics	| Arizona State University	 			        		
-- B.Tech., Electronics and communication | SRM University
-
-
-
-<!-- ## Work Experience
-**Researcher @ Active Perception Group (_April 2023 - Present_)**
-- Designing un-supervised learning based architechurre for monocular visual odometry on KITTI dataset.
-
-**Summer Intern @ HiMER Lab (_October 2022 - July 2023_)**
-- Implementation of robot teleoperation through Vertual Reality. This study also includes literature review of psychological factors involving human comfort, transparency, efficient communication and reconfigurability. -->
-
-## Posts!
-### - Latest papaer published at WACV 2026 : [Link](https://huang-chiyao.github.io/vocal/) 
-### - My MS thesis topic(Visual Odometry via Contrastive Learning) is now on [arxiv](https://arxiv.org/pdf/2507.00243v1)
-
-## Work Experience
-### Opal AI | Machine Learning Engineer
-Scan2BIM. Geomteric Computer Vision. VLM
-
-### Openspace AI | Computer Vision Engineer
-Advancing Spatial AI | Building robust SLAM & 3D reconstruction systems | Training 3D foundation models to redefine Spatial intelligence.
-
-### Active Perception Group | Research Assistant 
-MS Thesis: Visual odometry using supervised contrastive regression loss for pose estimation (Advisor: Dr. Yezhou Yang)
-Achieved 0.76 cm translational and 1e-6 rad rotational accuracy on the KITTI dataset
-
-### Packizon | Computer Vision Intern
-Developed an RGBD camera-based, highly accurate  box-dimensioning system
-### RRC | Robotics Research Engineer
-Autonomous Vehicle: Experiments with COntrol System
-
-### Flytbase | Robotics Engineer 
-Robotics Software Development for Drones in ROS | Lots of Computer Vision
-
-
-
-## Intersting Projects:
-
-
-
-### SLAM mission and autonomous landing
-
-![slamProj](images/ezgif.gif)
-
-*Crreating a 3D pointmap of a rocky mountain using ORB-SLAM. while autonomously navigating and landing on the mocing rover using optical flow* (Concepts: ORB-SLAM, ROS, Gazebo Simulation, Optical flow)
-[View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main)
-
-### Learning to Localize : Contrastive approach for visual localization 
-
-![VOCAL_img](images/latent_space_diff.png)
-
-
-*A Self-Supervised approach for Learning based Visual Localization. It is a novel use of contrastive loss funtion for finding SE(3) pose of object*
-[View Code](https://zeelbhatt.github.io/Learning-from-Motion.github.io/)
-
-
-### Bundle Adjustment using C++ Ceres Library
-
-![blendingProj](images/building.png)
-[*See blog-post*](https://zeelbhatt.github.io/bundle_adjustment.github.io/)
-*I have written a detail article about Camera calinration and bundle Adjustment* [*View Code*](https://github.com/zeelbhatt/bundle_adjustment.github.io)
-
-### Image signal processing
-
-![fourierProj](images/lincon_output.png)
-*Implementation of low-pass filter, high-pass filter on the images, Phase swapping of two images*
-[See blog-post](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
-
-
-### Image generation - multiresolution blending 
-
-![blendingProj](images/pyramids.png)
-
-*Generation of Gaussian pyramid and Laplcian pyramid as a basic encoder decoder model*
-
-
-
-### Adeversarial generative networks
-
-![Project](images/pyramid.png)
-*Implemented a Deep Convolutional Generative Adversarial Network (DCGAN) model for image generation as described in [Goodfellow’s paper](https://proceedings.neurips.cc/paper_files/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf), showcasing proficiency in deep learning and computer vision. (Implementation of Min-Max adversarial loss funtion)*
-[View Code](https://github.com/zeelbhatt/generative_adversarial_networks)
-
-
-### LQR Controller to balance the inverted pendulmn
-
-![Project Name](images/pendulmn.gif)
-*Balancing an inverted pendulum by programming an LQR controller. Design of a controller by checking observabilty matrix, kalman filtering, and finally checking the controllability of the designed system.*
-[View Code](https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control)
-
-[View PDF](/images/vocl_proposal.pdf)
-
-## Blog-posts
-### Image Fourier Transform
-[![Alt Text](images/fft2.png)](https://zeelbhatt.github.io/image-fourier-transform.github.io/)
-
-
-## Publication
-
-IROS 2018 [https://ieeexplore.ieee.org/document/8594129](https://ieeexplore.ieee.org/document/8594129)
-M. Harikrishnan Nair, T. Ghanshyam Singh, G. Chourasia, A. Das, A. Shrivastava and Z. S. Bhatt, "Flamen 7 DOF robotic Arm to Manipulate a Spanish Fan," 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2018, pp. 4152-4157, DOI: 10.1109/IROS.2018.8594129.
-
-[https://ieeexplore.ieee.org/abstract/document/8991313](https://ieeexplore.ieee.org/abstract/document/8991313)
-Chourasia, Gunjan, et al. "7-dof robotic manipulator for autonomous segregation using transfer learning." 2019 6th International Conference on Computing for Sustainable Global Development (INDIACom). IEEE, 2019.
-
-### - My Chess Opennings !!
-
-#### Queen's Gambit Knight sacrifice version
-The main line of Queen's Gambit Declined. With a beautiful knight sacrifice on move 15, checkmate was inevitable within the next four moves. I am playing white. 
-
-<iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&bg=auto"
-width=600 height=397 frameborder=0></iframe>
-
-
-
-
-
-
-#### Sicilian Defense is the best for Black
-My dark squared bishop is the MVP! The white was crushed within 20 moves. I am playing black. 
-
-<iframe id="14394613" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=14394613"></iframe><script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"14394613"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Zeel Bhatt Portfolio — Design System
+
+A small, faithful design system distilled from the live personal portfolio of
+**Zeel Bhatt** — an M.S. Robotics graduate (Arizona State University) working in
+machine learning with a focus on **3D vision, SLAM, and robotics**.
+
+The live site is a GitHub Pages / Jekyll page built on the **`jekyll-theme-minimal`**
+theme: a clean, two-column, black-on-white academic layout. This system captures that
+theme's foundations (Noto Sans, the `#267CB9` link blue, neutral grays, 5px radii,
+hairline borders) and extends them into a structured, mobile-friendly, scroll-snapping
+portfolio rebuild.
+
+## Sources
+
+- **Portfolio repo:** https://github.com/zeelbhatt/zeelbhatt.github.io
+  (content + project images; `_config.yml` declares `theme: jekyll-theme-minimal`)
+- **Theme source of truth:** https://github.com/pages-themes/minimal
+  (`_sass/jekyll-theme-minimal.scss`, `_sass/fonts.scss` — exact colors, type, layout)
+
+Explore those repos to build higher-fidelity work against this person's site. Imagery in
+`assets/` is pulled directly from the portfolio repo.
+
+---
+
+## Content Fundamentals
+
+How copy reads on this site:
+
+- **Voice:** first person ("I am an M.S. Robotics…", "I believe humans should be
+  immortal"). Direct, plain, occasionally idealistic. Technical without being stiff.
+- **Tone:** matter-of-fact and a little playful. Mentions chess, a musical instrument,
+  and immortality right next to KITTI accuracy numbers.
+- **Casing:** Sentence case for prose; Title Case for section headers and role/company
+  names. Acronyms stay uppercase (SLAM, ROS, CUDA, RGB-D, SE(3)).
+- **Specifics over adjectives:** results are quantified — "0.76 cm translational and
+  1e-6 rad rotational accuracy on the KITTI dataset." Prefer concrete metrics and named
+  techniques (ORB-SLAM, Ceres, DCGAN, optical flow) to vague claims.
+- **Emoji:** essentially none in the technical copy. (The rebuild uses two chess glyphs
+  ♛ ♚ only in the personal "Off the Clock" section — restrained and optional.)
+- **Vibe:** a researcher's homepage — papers, projects, code links. Short blurbs, lots of
+  outbound links ("View Code", "See blog-post", arXiv, IEEE, Lichess).
+
+Example phrasings to echo:
+> "My research is driven by a more abstract interest in shape understanding at both the
+> structural and semantic levels."
+> "Building robust SLAM & 3D reconstruction systems."
+
+---
+
+## Visual Foundations
+
+- **Color:** near-monochrome. White (`#fff`) page, ink grays for text
+  (`#222` headings → `#727272` body), a single **brand blue `#267CB9`** for links and
+  accents that deepens to `#069` on hover. No gradients. Imagery (e.g. the hero photo)
+  carries the only warm color — a Phoenix sunset — and is left untreated (no filters,
+  no grain).
+- **Type:** **Noto Sans** for everything (the theme's self-hosted webfont; we load the
+  identical family from Google Fonts). **Noto Sans Mono** is added for eyebrows, section
+  numbers, tags and code. Headings are bold with slightly tight tracking; body is 16px/1.6.
+- **Spacing:** 4px base step. The theme's signature `20px` block rhythm and `50px` page
+  padding are preserved as tokens.
+- **Backgrounds:** flat white or a barely-there `#f8f8f8` subtle panel. No textures,
+  patterns, or full-bleed gradients. The contact section uses the subtle panel to signal
+  a close.
+- **Borders:** 1px hairlines in `#e5e5e5` / `#e0e0e0`. Used generously to divide list
+  rows and outline cards — this is a hairline-driven system, not a shadow-driven one.
+- **Shadows:** soft, neutral, low-opacity (`rgba(34,34,34,…)`). Cards rest with almost
+  no shadow and lift to `shadow-md` on hover. No colored glows.
+- **Corners:** `5px` is the theme default (buttons, code blocks); the rebuild adds `10px`
+  for cards and `16px` for the photo. Pills (`999px`) for tags.
+- **Cards:** white, 1px border, 10px radius, near-zero rest shadow. On hover: lift 3px,
+  `shadow-md`, border darkens slightly, and an inline ↗ arrow nudges.
+- **Hover states:** links go from `#267CB9` → `#069` (and the theme famously bolds them);
+  buttons darken; cards lift. **Press:** none beyond color (no scale-down).
+- **Animation:** restrained. A single scroll-driven `rise` (fade + 22px translate) reveals
+  section content via `animation-timeline: view()`, degrading to fully-visible where
+  unsupported. Easing is a gentle `cubic-bezier(0.22,1,0.36,1)`. No bounces, no loops.
+- **Transparency / blur:** not used. Surfaces are opaque.
+- **Layout rules:** the desktop layout pins a **fixed left rail** (photo + identity + nav)
+  while the right column **scroll-snaps** through full-height sections. On mobile (≤880px)
+  the rail becomes the first full-screen panel and the document scroll-snaps.
+
+---
+
+## Iconography
+
+The original site uses **no icon system at all** — it's a Markdown page; "icons" are just
+text links and inline images. The rebuild keeps that minimalism:
+
+- **Brand/social marks:** two tiny inline SVGs only — a GitHub mark and a document/arXiv
+  glyph — drawn at 15px in the rail. These are the sole hand-drawn vectors.
+- **Affordances:** the up-right arrow **↗** (a Unicode character, not an icon font)
+  marks every outbound link. Chess uses Unicode **♛ ♚**.
+- **No icon font, no sprite, no emoji** in the technical content. If a future surface needs
+  a broader icon set, match this hairline / thin-stroke aesthetic (e.g. Lucide at
+  1.75–2px stroke) and flag the addition — none ships today.
+
+---
+
+## Index / Manifest
+
+**Root**
+- `styles.css` — global entry point (an `@import` manifest; link this one file)
+- `tokens/` — `colors.css`, `typography.css`, `fonts.css`, `spacing.css`
+- `README.md` — this file
+- `SKILL.md` — Agent-Skills-compatible entry point
+
+**Foundations** (`guidelines/` — Design System tab cards)
+- Colors: `color-brand`, `color-neutrals`
+- Type: `type-display`, `type-body`
+- Spacing: `spacing-scale`, `radii-shadows`
+
+**Components** (`components/core/`)
+- `Button` — primary / secondary / ghost, 3 sizes
+- `Tag` — monospace skill / metadata pill
+- `Card` — bordered project / link card with cover image
+- `core.card.html` — combined component specimen
+
+**UI Kit** (`ui_kits/portfolio/`)
+- `index.html` — the full rebuilt portfolio: fixed photo rail + scroll-snap sections
+  (About · Experience · Selected Work · Research & Writing · Off the Clock · Contact),
+  mobile-friendly.
+
+**Assets** (`assets/`)
+- `photo.jpeg` — hero portrait
+- `projects/` — project cover images (SLAM, VOCAL, bundle adjustment, signal processing,
+  blending, GAN, Fourier)

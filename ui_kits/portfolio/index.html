@@ -1,0 +1,563 @@
+<!-- @dsCard group="Portfolio" viewport="1280x760" name="Portfolio — Full Site" subtitle="Scroll-snap sections, fixed photo rail, mobile-friendly" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Zeel Bhatt — Robotics · 3D Vision · ML</title>
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--text-body);
+    background: var(--bg-page);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-strong); }
+  ::selection { background: var(--accent-tint); }
+
+  /* ---------- Shell ---------- */
+  .shell { display: flex; min-height: 100dvh; }
+
+  /* ---------- Left rail (fixed photo + identity) ---------- */
+  .rail {
+    width: var(--sidebar-w);
+    flex: none;
+    height: 100dvh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-6) var(--space-8);
+    border-right: 1px solid var(--border);
+    background: var(--bg-page);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .rail__photo {
+    width: 170px;
+    height: auto;
+    aspect-ratio: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+    display: block;
+  }
+  .rail__name {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--text-display);
+    letter-spacing: var(--ls-tight);
+    line-height: var(--lh-tight);
+    margin: var(--space-4) 0 var(--space-1);
+  }
+  .rail__role {
+    font-size: var(--fs-small);
+    color: var(--text-subhead);
+    margin: 0 0 var(--space-5);
+    font-weight: var(--fw-medium);
+  }
+  .rail__role b { color: var(--accent); font-weight: var(--fw-semibold); }
+
+  .skills { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: 0 0 var(--space-4); padding: 0; list-style: none; }
+  .skills li {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-subhead);
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    padding: 2px 6px;
+    white-space: nowrap;
+  }
+
+  /* nav */
+  .nav { margin-top: auto; display: flex; flex-direction: column; gap: 0; }
+  .nav a {
+    display: flex; align-items: center; gap: var(--space-2);
+    font-size: var(--fs-eyebrow);
+    color: var(--text-muted);
+    padding: 3px 0;
+    transition: color var(--dur-fast) var(--ease-std);
+  }
+  .nav a .num { font-family: var(--font-mono); font-size: 10px; opacity: .6; width: 1.7em; }
+  .nav a .bar { width: 14px; height: 1px; background: currentColor; opacity: .4; transition: width var(--dur-base) var(--ease-out); }
+  .nav a:hover { color: var(--text-heading); }
+  .nav a.is-active { color: var(--text-display); font-weight: var(--fw-semibold); }
+  .nav a.is-active .bar { width: 34px; opacity: 1; background: var(--accent); }
+
+  .social { display: flex; gap: var(--space-4); margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--border); }
+  .social a { font-size: var(--fs-caption); color: var(--text-muted); display: inline-flex; align-items: center; gap: 6px; }
+  .social a:hover { color: var(--accent); }
+  .social svg { width: 15px; height: 15px; }
+
+  /* ---------- Right scroll column ---------- */
+  .scroll {
+    flex: 1;
+    height: 100dvh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  .panel {
+    min-height: 100dvh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-16) clamp(var(--space-10), 7vw, 110px);
+  }
+  .panel__inner { width: 100%; max-width: var(--content-max); }
+  .panel--wide .panel__inner { max-width: 820px; }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: var(--fs-eyebrow);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex; align-items: center; gap: var(--space-3);
+    margin: 0 0 var(--space-6);
+  }
+  .eyebrow::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+  .panel h2 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-tight);
+    color: var(--text-display);
+    letter-spacing: var(--ls-tight);
+    font-weight: var(--fw-bold);
+    margin: 0 0 var(--space-6);
+  }
+  .lead { font-size: var(--fs-lead); color: var(--text-subhead); line-height: var(--lh-body); margin: 0 0 var(--space-5); }
+  .panel p { margin: 0 0 var(--space-5); }
+  .panel p:last-child { margin-bottom: 0; }
+  .panel strong { color: var(--text-heading); font-weight: var(--fw-semibold); }
+
+  /* education / two-up */
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-top: var(--space-8); }
+  .meta-grid .label { font-family: var(--font-mono); font-size: var(--fs-eyebrow); text-transform: uppercase; letter-spacing: var(--ls-eyebrow); color: var(--text-muted); margin: 0 0 var(--space-2); }
+  .meta-grid .deg { color: var(--text-display); font-weight: var(--fw-semibold); margin: 0 0 2px; }
+  .meta-grid .school { font-size: var(--fs-small); color: var(--text-body); margin: 0; }
+
+  /* feature points (intro panel) */
+  .points { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-4); }
+  .points li { position: relative; padding-left: 30px; font-size: var(--fs-lead); color: var(--text-subhead); line-height: var(--lh-snug); }
+  .points li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 16px; height: 2px; background: var(--accent); }
+
+  /* experience timeline */
+  .xp { list-style: none; margin: 0; padding: 0; }
+  .xp li {
+    display: grid; grid-template-columns: 200px 1fr; gap: var(--space-6);
+    padding: var(--space-5) 0;
+    border-top: 1px solid var(--border);
+    align-items: baseline;
+  }
+  .xp li:last-child { border-bottom: 1px solid var(--border); }
+  .xp .co { color: var(--text-display); font-weight: var(--fw-bold); font-size: var(--fs-body); }
+  .xp .pos { font-family: var(--font-mono); font-size: var(--fs-eyebrow); text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-top: 4px; }
+  .xp .desc { font-size: var(--fs-small); color: var(--text-body); }
+
+  /* work grid */
+  .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-6); }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 0;
+    overflow: hidden;
+    background: var(--bg-card);
+    display: flex; flex-direction: column;
+    transition: box-shadow var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+  }
+  .card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--border-strong); }
+  .card__img { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; background: var(--bg-card-subtle); display: block; }
+  .card__body { padding: var(--space-4) var(--space-5) var(--space-5); }
+  .card__title { color: var(--text-display); font-weight: var(--fw-semibold); font-size: var(--fs-small); margin: 0 0 4px; display: flex; align-items: center; gap: 6px; }
+  .card__title .arrow { color: var(--accent); transition: transform var(--dur-fast) var(--ease-std); }
+  .card:hover .card__title .arrow { transform: translate(2px,-2px); }
+  .card__tags { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
+  .more-links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); font-size: var(--fs-small); }
+  .more-links a { display: inline-flex; align-items: center; gap: 5px; color: var(--text-body); }
+  .more-links a:hover { color: var(--accent); }
+  .more-links a::before { content: "↗"; color: var(--accent); font-size: 0.85em; }
+
+  /* research list */
+  .pub { list-style: none; margin: 0; padding: 0; }
+  .pub li { padding: var(--space-5) 0; border-top: 1px solid var(--border); }
+  .pub li:last-child { border-bottom: 1px solid var(--border); }
+  .pub .venue { font-family: var(--font-mono); font-size: var(--fs-eyebrow); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); display: inline-block; margin-bottom: var(--space-2); }
+  .pub .t { color: var(--text-display); font-weight: var(--fw-semibold); margin: 0 0 4px; display: block; }
+  .pub .auth { font-size: var(--fs-caption); color: var(--text-muted); margin: 0; }
+
+  /* beyond / quote */
+  .quote { font-size: var(--fs-h3); line-height: var(--lh-snug); color: var(--text-display); font-weight: var(--fw-medium); letter-spacing: var(--ls-tight); margin: 0 0 var(--space-8); }
+  .quote span { color: var(--accent); }
+  .beyond-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+  .beyond-card { border: 1px solid var(--border); border-radius: 0; padding: var(--space-6); background: var(--bg-card-subtle); }
+  .beyond-card h3 { margin: 0 0 var(--space-2); color: var(--text-display); font-size: var(--fs-body); }
+  .beyond-card p { font-size: var(--fs-small); margin: 0 0 var(--space-3); }
+  .beyond-card a { font-size: var(--fs-small); }
+
+  /* contact */
+  .panel--contact { background: var(--bg-card-subtle); }
+  .contact-links { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-8); }
+  .contact-links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: var(--space-5) var(--space-6);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: var(--bg-card);
+    color: var(--text-display);
+    font-weight: var(--fw-semibold);
+    transition: border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  }
+  .contact-links a:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+  .contact-links .sub { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--text-muted); font-weight: var(--fw-regular); }
+
+  /* progress dots (mobile-hidden, desktop optional) */
+  .colophon { margin-top: var(--space-12); font-size: var(--fs-caption); color: var(--text-muted); }
+
+  /* ---------- Reveal animation (scroll-driven; content visible by default) ---------- */
+  @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .panel__inner > * {
+        animation: rise linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 28%;
+      }
+    }
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 880px) {
+    html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+    .shell { display: block; min-height: auto; }
+    .rail {
+      position: relative; width: auto; height: auto; min-height: 100dvh;
+      scroll-snap-align: start; scroll-snap-stop: always;
+      border-right: none; border-bottom: 1px solid var(--border);
+      justify-content: center;
+      padding: max(var(--space-10), env(safe-area-inset-top)) var(--space-6) var(--space-10);
+    }
+    .rail__photo { width: 60%; max-width: 280px; margin: 0 auto; border-radius: 0; }
+    .rail__name, .rail__role { text-align: center; }
+    .skills { justify-content: center; }
+    .nav { display: none; }
+    .social { justify-content: center; }
+    .scroll { height: auto; overflow: visible; scroll-snap-type: none; display: contents; }
+    .panel { min-height: 100dvh; padding: var(--space-12) var(--space-6); }
+    .work-grid, .beyond-grid, .meta-grid { grid-template-columns: 1fr; }
+    .xp li { grid-template-columns: 1fr; gap: var(--space-2); }
+    .panel h2 { font-size: var(--fs-h2); }
+  }
+  @media (max-width: 880px) {
+    /* re-enable snap children on the document scroller */
+    .panel { scroll-snap-align: start; scroll-snap-stop: always; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <!-- ============ LEFT RAIL (fixed) ============ -->
+  <aside class="rail">
+    <img class="rail__photo" src="../../assets/photo.jpeg" alt="Zeel Bhatt" />
+    <h1 class="rail__name" style="font-size: 20px">Zeel Bhatt</h1>
+    <p class="rail__role">M.S. Robotics · <b>3D Vision &amp; Machine Learning</b></p>
+    <ul class="skills">
+      <li>AutoCAD</li><li>Revit</li><li>C++</li><li>CUDA</li><li>GTSAM</li><li>PyTorch</li><li>OpenCV</li><li>ROS / ROS2</li>
+    </ul>
+    <nav class="nav" aria-label="Sections">
+      <a href="#intro"      data-to="intro"><span class="num">01</span><span class="bar"></span>AI for Designers</a>
+      <a href="#about"      data-to="about"><span class="num">02</span><span class="bar"></span>About</a>
+      <a href="#experience" data-to="experience"><span class="num">03</span><span class="bar"></span>Experience</a>
+      <a href="#work"       data-to="work"><span class="num">04</span><span class="bar"></span>Selected Work</a>
+      <a href="#work2"      data-to="work2"><span class="num">05</span><span class="bar"></span>More Work</a>
+      <a href="#research"   data-to="research"><span class="num">06</span><span class="bar"></span>Research &amp; Writing</a>
+      <a href="#beyond"     data-to="beyond"><span class="num">07</span><span class="bar"></span>Off the Clock</a>
+    </nav>
+    <div class="social">
+      <a href="https://github.com/zeelbhatt" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C18.6 4.6 19.6 5 19.6 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/zeel-bhatt67/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.97 0 1.78-.78 1.78-1.73V1.73C24 .77 23.19 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=NmMmdtkAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.73V17h2V9zM5 14.18V18l7 4 7-4v-3.82l-7 4.45z"/></svg>
+      </a>
+      <a href="https://x.com/Zeelout" target="_blank" rel="noopener" aria-label="X" title="X">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="mailto:zeelbhatt0425@gmail.com" aria-label="Email" title="zeelbhatt0425@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ============ RIGHT SCROLL COLUMN ============ -->
+  <main class="scroll" id="scroll">
+
+    <!-- 01 AI FOR DESIGNERS (brand) -->
+    <section class="panel" id="intro">
+      <div class="panel__inner">
+        <p class="eyebrow">01 — Introducing</p>
+        <h2 style="font-size: 30px">AI for Designers.</h2>
+        <ul class="points">
+          <li>AI can now understand 3D geometry and shapes.</li>
+          <li>Make very precise plans with prompts.</li>
+          <li>In your current Revit &amp; AutoCAD workflow.</li>
+          <li>A new era of architects will design with AI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 02 ABOUT -->
+    <section class="panel" id="about">
+      <div class="panel__inner">
+        <p class="eyebrow">02 — About</p>
+        <h2 style="font-size: 6px">Teaching machines to understand shapes</h2>
+        <p class="lead">I'm an M.S. Robotics graduate from Arizona State University working in machine learning, with a focus on 3D vision and robotics.</p>
+        <p>My research is driven by a more abstract interest in <strong>shape understanding</strong> — at both the structural and semantic levels.
+These days I work in the construction industry, building 3D technology for the field. 
+Outside of work, I play a lot of chess and a musical instrument — and I believe humans should be immortal.
+
+</p>
+        <div class="meta-grid">
+          <div>
+            <p class="label">Education</p>
+            <p class="deg">M.S., Robotics</p>
+            <p class="school">Arizona State University</p>
+          </div>
+          <div>
+            <p class="label">&nbsp;</p>
+            <p class="deg">B.Tech., Electronics &amp; Comm.</p>
+            <p class="school">SRM University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 EXPERIENCE -->
+    <section class="panel panel--wide" id="experience">
+      <div class="panel__inner">
+        <p class="eyebrow">03 — Experience</p>
+        <h2 style="font-size: 6px">Where I've worked</h2>
+        <ul class="xp">
+          <li>
+            <div><div class="co">Opal AI</div><div class="pos">Machine Learning Engineer</div></div>
+            <div class="desc">BIM model generation from scans.
+Agentic workflow for building the BIM models  </div>
+          </li>
+          <li>
+            <div><div class="co">Openspace AI</div><div class="pos">Computer Vision Engineer</div></div>
+            <div class="desc">Building 3D technologies for construction industry  
+Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D foundation models to redefine spatial intelligence.</div>
+          </li>
+          <li>
+            <div><div class="co">Active Perception Group</div><div class="pos">Research Assistant</div></div>
+            <div class="desc">M.S. thesis: visual odometry via supervised contrastive regression for pose estimation (Advisor: Dr. Yezhou Yang). 0.76&nbsp;cm translational / 1e-6&nbsp;rad rotational accuracy on KITTI.</div>
+          </li>
+          <li>
+            <div><div class="co">Packizon</div><div class="pos">Computer Vision Intern</div></div>
+            <div class="desc">Built an RGB-D camera-based, high-accuracy box-dimensioning system.</div>
+          </li>
+          <li>
+            <div><div class="co">RRC</div><div class="pos">Robotics Research Engineer</div></div>
+            <div class="desc">Autonomous-vehicle control-systems experiments.</div>
+          </li>
+          <li>
+            <div><div class="co">Flytbase</div><div class="pos">Robotics Engineer</div></div>
+            <div class="desc">Robotics software for drones in ROS — heavy on computer vision.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 03 SELECTED WORK -->
+    <section class="panel panel--wide" id="work">
+      <div class="panel__inner">
+        <p class="eyebrow">04 — Selected Work</p>
+        <h2 style="font-size: 6px">Projects</h2>
+        <div class="work-grid">
+          <a class="card" href="https://github.com/zeelbhatt/autonomous-exploration/tree/main" target="_blank" rel="noopener">
+            <img class="card__img" src="https://zeelbhatt.github.io/images/ezgif.gif" alt="SLAM 3D pointmap and autonomous landing (animated)" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">SLAM Mission &amp; Autonomous Landing <span class="arrow">↗</span></p>
+              <p class="card__tags">ORB-SLAM · ROS · Gazebo · Optical Flow</p>
+            </div>
+          </a>
+          <a class="card" href="https://zeelbhatt.github.io/Learning-from-Motion.github.io/" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/vocal.png" alt="Latent space for contrastive localization" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Learning to Localize <span class="arrow">↗</span></p>
+              <p class="card__tags">Contrastive Loss · SE(3) Pose · Self-Supervised</p>
+            </div>
+          </a>
+          <a class="card" href="https://zeelbhatt.github.io/bundle_adjustment.github.io/" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/bundle-adjustment.png" alt="Bundle adjustment reconstruction" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Bundle Adjustment in C++ <span class="arrow">↗</span></p>
+              <p class="card__tags">Ceres · Camera Calibration · Write-up</p>
+            </div>
+          </a>
+          <a class="card" href="https://zeelbhatt.github.io/image-fourier-transform.github.io/" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/signal-processing.png" alt="Image signal processing output" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Image Signal Processing <span class="arrow">↗</span></p>
+              <p class="card__tags">Low / High-pass · Phase Swap · OpenCV</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 MORE WORK -->
+    <section class="panel panel--wide" id="work2">
+      <div class="panel__inner">
+        <p class="eyebrow">05 — More Work</p>
+        <h2 style="font-size: 6px">More projects</h2>
+        <div class="work-grid">
+          <a class="card" href="https://github.com/zeelbhatt/multiresolution-blending" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/blending.png" alt="Gaussian and Laplacian pyramids" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Multiresolution Blending <span class="arrow">↗</span></p>
+              <p class="card__tags">Gaussian · Laplacian Pyramids</p>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/zeelbhatt/generative_adversarial_networks" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/gan-pyramid.png" alt="DCGAN generated images" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Adversarial Generative Networks <span class="arrow">↗</span></p>
+              <p class="card__tags">DCGAN · Min-Max Loss · PyTorch</p>
+            </div>
+          </a>
+          <a class="card" href="https://zeelbhatt.github.io/image-fourier-transform.github.io/" target="_blank" rel="noopener">
+            <img class="card__img" src="../../assets/projects/fourier.png" alt="Image Fourier transform" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">Image Fourier Transform <span class="arrow">↗</span></p>
+              <p class="card__tags">FFT · Frequency Domain · Filtering</p>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/zeelbhatt/autonomous-exploration/tree/main/pendulum_control" target="_blank" rel="noopener">
+            <img class="card__img" src="https://zeelbhatt.github.io/images/pendulmn.gif" alt="LQR inverted pendulum control (animated)" loading="lazy" />
+            <div class="card__body">
+              <p class="card__title">LQR Inverted Pendulum <span class="arrow">↗</span></p>
+              <p class="card__tags">LQR · Kalman Filter · Observability</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 RESEARCH & WRITING -->
+    <section class="panel panel--wide" id="research">
+      <div class="panel__inner">
+        <p class="eyebrow">06 — Research &amp; Writing</p>
+        <h2 style="font-size: 6px">Papers &amp; posts</h2>
+        <ul class="pub">
+          <li>
+            <span class="venue">WACV 2026 · Latest</span>
+            <a class="t" href="https://huang-chiyao.github.io/vocal/" target="_blank" rel="noopener">VOCAL — published at WACV 2026 ↗</a>
+            <p class="auth">Visual odometry &amp; contrastive learning for spatial perception.</p>
+          </li>
+          <li>
+            <span class="venue">Preprint · arXiv</span>
+            <a class="t" href="https://arxiv.org/pdf/2507.00243v1" target="_blank" rel="noopener">Visual Odometry via Contrastive Learning (M.S. Thesis) ↗</a>
+            <p class="auth">Supervised contrastive regression loss for SE(3) pose estimation on KITTI.</p>
+          </li>
+          <li>
+            <span class="venue">IROS 2018</span>
+            <a class="t" href="https://ieeexplore.ieee.org/document/8594129" target="_blank" rel="noopener">Flamen — 7-DOF Robotic Arm to Manipulate a Spanish Fan ↗</a>
+            <p class="auth">Nair, Singh, Chourasia, Das, Shrivastava, Bhatt — IEEE/RSJ IROS 2018, pp. 4152–4157.</p>
+          </li>
+          <li>
+            <span class="venue">INDIACom 2019</span>
+            <a class="t" href="https://ieeexplore.ieee.org/abstract/document/8991313" target="_blank" rel="noopener">7-DOF Manipulator for Autonomous Segregation using Transfer Learning ↗</a>
+            <p class="auth">Chourasia et al. — 6th Int'l Conference on Computing for Sustainable Global Development.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 OFF THE CLOCK -->
+    <section class="panel panel--wide" id="beyond">
+      <div class="panel__inner">
+        <p class="eyebrow">07 — Off the Clock</p>
+        <p class="quote" style="font-size: 30px">My chess openings </p>
+        <div class="beyond-grid">
+          <div class="beyond-card">
+            <h3>♛ Queen's Gambit — Knight Sacrifice</h3>
+            <p>The main line of the Queen's Gambit Declined. A knight sacrifice on move 15 made checkmate inevitable within four. Playing white.</p>
+            <iframe src="https://lichess.org/embed/game/LbpnsHTq?theme=auto&amp;bg=auto" title="Queen's Gambit game on Lichess" style="width:100%;height:340px;border:none;border-radius:0" allowfullscreen></iframe>
+          </div>
+          <div class="beyond-card">
+            <h3>♚ Sicilian Defense — for Black</h3>
+            <p>My dark-squared bishop is the MVP. White was crushed within 20 moves. Playing black.</p>
+            <iframe id="14394613" allowtransparency="true" title="Sicilian Defense board on Chess.com" style="width:100%;border:none;border-radius:0" src="https://www.chess.com/emboard?id=14394613"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>window.addEventListener("message",function(e){e.data&&"14394613"===e.data.id&&document.getElementById("14394613")&&(document.getElementById("14394613").style.height=(e.data.frameHeight+37)+"px");});</script>
+
+  </main>
+</div>
+
+<script>
+  (function () {
+    var scroller = document.getElementById('scroll');
+    var panels = Array.prototype.slice.call(document.querySelectorAll('.panel'));
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+    var isMobile = function () { return window.matchMedia('(max-width: 880px)').matches; };
+
+    // Smooth scroll on nav click (correct container per breakpoint)
+    navLinks.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var el = document.getElementById(a.getAttribute('data-to'));
+        if (!el) return;
+        if (isMobile()) {
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' });
+        } else {
+          scroller.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Active nav: pick the panel whose center is nearest the viewport center
+    function updateActive() {
+      var vmid = window.innerHeight / 2;
+      var best = null, bestD = Infinity;
+      panels.forEach(function (p) {
+        var r = p.getBoundingClientRect();
+        var d = Math.abs((r.top + r.height / 2) - vmid);
+        if (d < bestD) { bestD = d; best = p; }
+      });
+      if (!best) return;
+      navLinks.forEach(function (a) {
+        a.classList.toggle('is-active', a.getAttribute('data-to') === best.id);
+      });
+    }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () { updateActive(); ticking = false; });
+    }
+    scroller.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', updateActive);
+    updateActive();
+  })();
+</script>
+</body>
+</html>
