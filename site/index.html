@@ -292,11 +292,6 @@
   .meta-grid .deg { color: var(--text-display); font-weight: var(--fw-semibold); margin: 0 0 2px; }
   .meta-grid .school { font-size: var(--fs-small); color: var(--text-body); margin: 0; }
 
-  /* feature points (intro panel) */
-  .points { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-4); }
-  .points li { position: relative; padding-left: 30px; font-size: var(--fs-lead); color: var(--text-subhead); line-height: var(--lh-snug); }
-  .points li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 16px; height: 2px; background: var(--accent); }
-
   /* experience timeline */
   .xp { list-style: none; margin: 0; padding: 0; }
   .xp li {
@@ -419,13 +414,12 @@
       <li>AutoCAD</li><li>Revit</li><li>C++</li><li>CUDA</li><li>GTSAM</li><li>PyTorch</li><li>OpenCV</li><li>ROS / ROS2</li>
     </ul>
     <nav class="nav" aria-label="Sections">
-      <a href="#intro"      data-to="intro"><span class="num">01</span><span class="bar"></span>AI for Designers</a>
-      <a href="#about"      data-to="about"><span class="num">02</span><span class="bar"></span>About</a>
-      <a href="#experience" data-to="experience"><span class="num">03</span><span class="bar"></span>Experience</a>
-      <a href="#work"       data-to="work"><span class="num">04</span><span class="bar"></span>Selected Work</a>
-      <a href="#work2"      data-to="work2"><span class="num">05</span><span class="bar"></span>More Work</a>
-      <a href="#research"   data-to="research"><span class="num">06</span><span class="bar"></span>Research &amp; Writing</a>
-      <a href="#beyond"     data-to="beyond"><span class="num">07</span><span class="bar"></span>Off the Clock</a>
+      <a href="#about"      data-to="about"><span class="num">01</span><span class="bar"></span>About</a>
+      <a href="#experience" data-to="experience"><span class="num">02</span><span class="bar"></span>Experience</a>
+      <a href="#work"       data-to="work"><span class="num">03</span><span class="bar"></span>Selected Work</a>
+      <a href="#work2"      data-to="work2"><span class="num">04</span><span class="bar"></span>More Work</a>
+      <a href="#research"   data-to="research"><span class="num">05</span><span class="bar"></span>Research &amp; Writing</a>
+      <a href="#beyond"     data-to="beyond"><span class="num">06</span><span class="bar"></span>Off the Clock</a>
     </nav>
     <div class="social">
       <a href="https://github.com/zeelbhatt" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
@@ -449,28 +443,14 @@
   <!-- ============ RIGHT SCROLL COLUMN ============ -->
   <main class="scroll" id="scroll">
 
-    <!-- 01 AI FOR DESIGNERS (brand) -->
-    <section class="panel" id="intro">
-      <div class="panel__inner">
-        <p class="eyebrow">01 — Introducing</p>
-        <h2>AI for Designers.</h2>
-        <ul class="points">
-          <li>AI can now understand 3D geometry and shapes.</li>
-          <li>Make very precise plans with prompts.</li>
-          <li>In your current Revit &amp; AutoCAD workflow.</li>
-          <li>A new era of architects will design with AI.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 02 ABOUT -->
+    <!-- 01 ABOUT -->
     <section class="panel" id="about">
       <div class="panel__inner">
-        <p class="eyebrow">02 — About</p>
-        <h2>Teaching machines to understand shapes</h2>
+        <p class="eyebrow">01 — About</p>
+        <h2>Teaching machines to understand shapes &amp; spaces</h2>
         <p class="lead">I'm an M.S. Robotics graduate from Arizona State University working in machine learning, with a focus on 3D vision and robotics.</p>
         <p>My research is driven by a more abstract interest in <strong>shape understanding</strong> — at both the structural and semantic levels.
-These days I work in the construction industry, building 3D technology for the field. 
+These days I work in the construction industry, building 3D technology for the field — and that same shape understanding is now leading me to <strong>build an AI for architects</strong>. 
 Outside of work, I play a lot of chess and a musical instrument — and I believe humans should be immortal.
 
 </p>
@@ -492,7 +472,7 @@ Outside of work, I play a lot of chess and a musical instrument — and I believ
     <!-- 02 EXPERIENCE -->
     <section class="panel panel--wide" id="experience">
       <div class="panel__inner">
-        <p class="eyebrow">03 — Experience</p>
+        <p class="eyebrow">02 — Experience</p>
         <h2>Where I've worked</h2>
         <ul class="xp">
           <li>
@@ -528,7 +508,7 @@ Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D founda
     <!-- 03 SELECTED WORK -->
     <section class="panel panel--wide" id="work">
       <div class="panel__inner">
-        <p class="eyebrow">04 — Selected Work</p>
+        <p class="eyebrow">03 — Selected Work</p>
         <h2>Projects</h2>
         <div class="work-grid">
           <a class="card" href="https://github.com/zeelbhatt/autonomous-exploration/tree/main" target="_blank" rel="noopener">
@@ -566,7 +546,7 @@ Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D founda
     <!-- 05 MORE WORK -->
     <section class="panel panel--wide" id="work2">
       <div class="panel__inner">
-        <p class="eyebrow">05 — More Work</p>
+        <p class="eyebrow">04 — More Work</p>
         <h2>More projects</h2>
         <div class="work-grid">
           <a class="card" href="https://github.com/zeelbhatt/multiresolution-blending" target="_blank" rel="noopener">
@@ -604,7 +584,7 @@ Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D founda
     <!-- 04 RESEARCH & WRITING -->
     <section class="panel panel--wide" id="research">
       <div class="panel__inner">
-        <p class="eyebrow">06 — Research &amp; Writing</p>
+        <p class="eyebrow">05 — Research &amp; Writing</p>
         <h2>Papers &amp; posts</h2>
         <ul class="pub">
           <li>
@@ -634,7 +614,7 @@ Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D founda
     <!-- 05 OFF THE CLOCK -->
     <section class="panel panel--wide" id="beyond">
       <div class="panel__inner">
-        <p class="eyebrow">07 — Off the Clock</p>
+        <p class="eyebrow">06 — Off the Clock</p>
         <p class="quote">My chess openings </p>
         <div class="beyond-grid">
           <div class="beyond-card">
@@ -701,5 +681,15 @@ Advancing spatial AI — robust SLAM &amp; 3D reconstruction, training 3D founda
     updateActive();
   })();
 </script>
+
+<!-- Default Statcounter code for My Portfolio https://zeelbhatt.github.io/ -->
+<script type="text/javascript">
+var sc_project=13036483;
+var sc_invisible=1;
+var sc_security="d62427be";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="web counter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13036483/0/d62427be/1/" alt="web counter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
 </body>
 </html>
